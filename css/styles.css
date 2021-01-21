@@ -7,16 +7,19 @@ html {
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	ont-size: 1.2em;
+	font-size: 1.2em;
 	line-height: 1.2em;
 	font-family: 'Roboto', sans-serif;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4{
 	font-family: 'Marcellus', serif;
 	letter-spacing: 2px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .heading {
@@ -43,7 +46,7 @@ h3 {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: crimson;
+	background-color: darkred;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -51,7 +54,7 @@ h3 {
 }
 
 #myBtn:hover {
-	background-color:darkred;
+	background-color:crimson;
 
 }
 
@@ -61,14 +64,16 @@ h3 {
 .navbar-brand h2{
 	height: 2rem;
 	color:whitesmoke !important;
+
 }
 
 .navbar {
 	
-	background-color: black;
+	/**background-color:#000036;**/
+	background: linear-gradient(to right bottom,#171717,#000036,#171717);
 	color:whitesmoke;
 	padding: .6rem 1rem;
-	font-size: 1.0rem;
+	font-size: 1.1rem;
 	letter-spacing: .1rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -82,12 +87,18 @@ h3 {
 
 .navbar-nav .nav-link {
 	padding-top: .8rem;
-	color: white;
+	color:gainsboro;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-	color:crimson;
+	color:darkred;
+	opacity.7;
+	transition: .7s;
+
 }
 
 #home .fas {
@@ -98,7 +109,7 @@ h3 {
 /*===== landing =====*/
 
 .landing {
-
+	background-color:darkgray;
 	background-image: url(../img/car.jpg);
 	background-size: cover;
 	background-position: center;
@@ -128,6 +139,8 @@ h3 {
 	top: 40%;
 	position: absolute;
 	text-align: left;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /*===== skills =====*/
@@ -141,6 +154,21 @@ h3 {
 
 #skills p {
 	margin: 0 25px;
+}
+#skills li{
+	list-style:circle;
+	text-align: left;
+		
+}
+#skills ul{
+	width:70%;
+	margin:auto;
+}
+#skills .card{
+	background-color:none;
+	color:black
+	
+	
 }
 
 /*===== projects ====*/
@@ -229,7 +257,7 @@ footer {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 767px){
   .caption {
 	color: whitesmoke;
 	top: 40%;
@@ -237,6 +265,9 @@ footer {
 	text-align:center;
 }
 	
+
+	
+ 
 	
 	.mobile{
 		padding-bottom:50px;
