@@ -1,15 +1,21 @@
 /*=== Global ===*/
 
 html {
-	padding: env(safe-area-inset);
+	scroll-behavior: smooth;
+
 }
 
 body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	font-size: 1.2em;
 	line-height: 1.2em;
 	font-family: 'Roboto', sans-serif;
+	
+}
+.offset:before {
+   content: "";
+   height: 62px;
+   margin-top: -62px;
+   display: block;
 }
 
 h1,
@@ -18,15 +24,19 @@ h3,
 h4{
 	font-family: 'Marcellus', serif;
 	letter-spacing: 2px;
+	
+}
+h1, h2{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	
 }
 
 .heading {
 	text-align: center;
 	text-transform: uppercase;
 	color: whitesmoke;
-	padding-top: 3em;
+	padding-top:2.5em;
 }
 
 .heading-underline {
@@ -70,7 +80,7 @@ h4{
 .navbar {
 	
 	/**background-color:#000036;**/
-	background: linear-gradient(to right bottom,#171717,#000036,#171717);
+	background: linear-gradient(to  bottom, black, #171717,black  );
 	color:whitesmoke;
 	padding: .6rem 1rem;
 	font-size: 1.1rem;
@@ -112,14 +122,15 @@ h4{
 	background-color:darkgray;
 	background-image: url(../img/car.jpg);
 	background-size: cover;
-	background-position: center;
-	position: relative;
-	position: relative;
+	background-position: center center;
+	position:relative;
+	 display: table;
 	width: 100%;
 	height: 100vh;
 
 	padding-top: 80px;
-	z-index: 2;
+	z-index:2;
+	overflow: hidden;
 }
 
 .landing::after {
@@ -131,7 +142,7 @@ h4{
 	width: 100%;
 	background: black;
 	opacity: .8;
-	z-index: -1;
+	z-index: 1;
 }
 
 .caption {
@@ -141,6 +152,7 @@ h4{
 	text-align: left;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	z-index:100;
 }
 
 /*===== skills =====*/
@@ -148,8 +160,9 @@ h4{
 #skills {
 	background: linear-gradient(to right bottom, #0f7764, rgb(10, 2, 59));
 	color: whitesmoke;
-	padding-bottom: 100px;
-	min-height: 100vh;
+	padding-bottom:120px;
+	min-height:100vh;
+	
 }
 
 #skills p {
@@ -161,7 +174,7 @@ h4{
 		
 }
 #skills ul{
-	width:70%;
+	width:80%;
 	margin:auto;
 }
 #skills .card{
@@ -208,19 +221,21 @@ h4{
 	background: linear-gradient(to right bottom, #0f7764, rgb(10, 2, 59));
 	min-height: 100vh;
 	z-index: 1;
+	padding-bottom: 100px;
 }
 
-.panel {
+.bg {
 	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 	margin: 25px 5px 100px 5px;
 	border-radius: 3px;
+	line-height:1.25em;
 }
 /*==== contact ====*/
 
 #contact {
 	background: linear-gradient(to right top, #0f7764, rgb(10, 2, 59));
 	color: whitesmoke;
-	min-height: 100vh;
+	min-height:100vh;
 
 
 
@@ -264,6 +279,11 @@ footer {
 	position: absolute;
 	text-align:center;
 }
+	.card,{
+		width:80%;
+			margin:auto;
+	}
+	
 	
 
 	
