@@ -117,8 +117,10 @@ h2 {
 }
 
 #home .fas {
-	color: white;
-	font-size: 1.75rem;
+	color:white;
+	padding:0;
+	font-size: 1.95rem;
+	
 }
 
 /*===== landing =====*/
@@ -307,4 +309,6 @@ footer {
 		text-align:left;
 	}
 	
-}
+	#contact p{
+		font-size:1.20em;
+	}
