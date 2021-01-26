@@ -93,6 +93,8 @@ h2 {
 	font-weight: 700;
 	text-transform: uppercase;
 
+-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -103,9 +105,7 @@ h2 {
 .navbar-nav .nav-link {
 	padding-top: .8rem;
 	color: gainsboro;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
+	
 }
 
 .navbar-nav .nav-link.active,
@@ -137,7 +137,7 @@ h2 {
 
 	padding-top: 80px;
 	z-index: 2;
-	overflow: hidden;
+	
 }
 
 .landing::after {
@@ -290,6 +290,9 @@ footer {
 		position: absolute;
 		text-align: center;
 	}
+	.landing {
+		min-height:150vh;
+	}
 
 	.card {
 		width: 90%;
@@ -312,3 +315,4 @@ footer {
 	#contact p{
 		font-size:1.20em;
 	}
+	
