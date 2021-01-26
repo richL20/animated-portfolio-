@@ -25,8 +25,4 @@ function topFunction() {
 //end up button
 
 // aos animation
-AOS.init({
-    easing:'ease',
-    duration:2000,
-
-  });
+AOS.init( );
