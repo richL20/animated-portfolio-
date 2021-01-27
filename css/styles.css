@@ -204,6 +204,9 @@ h2 {
 	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 	border: none;
 }
+.card-img-top{
+	cursor: pointer;
+}
 
 .card-footer {
 	background-color: black;
@@ -294,6 +297,7 @@ footer {
 	.landing {
 		min-height:150vh;
 	}
+	
 
 	.card {
 		width: 90%;
@@ -316,4 +320,9 @@ footer {
 	#contact p{
 		font-size:1.20em;
 	}
+	h4{
+	font-family: 'Roboto', sans-serif;
+		text-align: center;
+	}
+	
 }
