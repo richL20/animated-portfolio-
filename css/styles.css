@@ -1,4 +1,5 @@
 /*=== Global ===*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@500&family=Overlock+SC&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -8,7 +9,7 @@ html {
 body {
 	font-size: 1.2em;
 	line-height: 1.2em;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -22,10 +23,17 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4	{
 	font-family: 'Marcellus', serif;
 	letter-spacing: 2px;
+}
 
+.card h4 {
+	
+	font-family: 'Marcellus', serif;
+	letter-spacing: 1px;
+	font-weight:bold;
+	color:black;
 }
 
 h1,
@@ -59,26 +67,27 @@ h2 {
 	font-size: 25px;
 	border: none;
 	outline: none;
-	background-color:crimson;
+	background-color: crimson;
 	color: white;
 	cursor: pointer;
-	padding: 10px 12px;;
-	border-radius:10%;
+	padding: 10px 12px;
+	;
+	border-radius: 10%;
 }
 
 #myBtn:hover {
-	background-color:darkred;
+	background-color: darkred;
 
 }
 
 
 /*============= NAVIGATION =============*/
 
-.navbar-brand h2{
-	font-size:1.65em;
+.navbar-brand h2 {
+	font-size: 1.65em;
 	color: whitesmoke !important;
-	padding-left:100px;
-	
+	padding-left: 100px;
+
 
 }
 
@@ -93,7 +102,7 @@ h2 {
 	font-weight: 700;
 	text-transform: uppercase;
 
--webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
 }
@@ -105,7 +114,7 @@ h2 {
 .navbar-nav .nav-link {
 	padding-top: .8rem;
 	color: gainsboro;
-	
+
 }
 
 .navbar-nav .nav-link.active,
@@ -117,10 +126,10 @@ h2 {
 }
 
 #home .fas {
-	color:white;
-	padding:0;
+	color: white;
+	padding: 0;
 	font-size: 1.95rem;
-	
+
 }
 
 /*===== landing =====*/
@@ -137,7 +146,7 @@ h2 {
 
 	padding-top: 80px;
 	z-index: 2;
-	
+
 }
 
 .landing::after {
@@ -156,7 +165,7 @@ h2 {
 	color: whitesmoke;
 	top: 40%;
 	position: absolute;
-	text-align:left;
+	text-align: left;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	z-index: 100;
@@ -167,18 +176,16 @@ h2 {
 #skills {
 	background: linear-gradient(to right bottom, #0f7764, rgb(10, 2, 59));
 	color: whitesmoke;
-	padding-bottom:50px;
+	padding-bottom: 50px;
 	min-height: 100vh;
 
 }
 
-#skills p {
-	margin: 0 25px;
-}
 
 #skills li {
 	list-style: circle;
 	text-align: left;
+	line-height: 1.3em;
 
 }
 
@@ -204,7 +211,12 @@ h2 {
 	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 	border: none;
 }
-.card-img-top{
+.card p{
+	padding:10px;
+	line-height: 1.3em;
+}
+
+.card-img-top {
 	cursor: pointer;
 }
 
@@ -293,36 +305,39 @@ footer {
 		position: absolute;
 		text-align: center;
 	}
-	
+
 	.landing {
-		min-height:150vh;
+		min-height: 150vh;
 	}
-	
+
 
 	.card {
 		width: 90%;
 		margin: auto;
 	}
-	.bg{
-		width:90%;
-		margin:auto;
+
+	.bg {
+		width: 90%;
+		margin: auto;
 	}
 
 	.mobile {
 		padding-bottom: 50px;
 	}
-	.navbar-brand h2{
-		font-size:1.25em;
-		padding-left:0;
-		text-align:left;
+
+	.navbar-brand h2 {
+		font-size: 1.25em;
+		padding-left: 0;
+		text-align: left;
 	}
-	
-	#contact p{
-		font-size:1.20em;
+
+	#contact p {
+		font-size: 1.20em;
 	}
-	h4{
-	font-family: 'Roboto', sans-serif;
+
+	h4 {
+		font-family: 'Roboto', sans-serif;
 		text-align: center;
 	}
-	
+
 }
