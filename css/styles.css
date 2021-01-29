@@ -23,17 +23,17 @@ body {
 h1,
 h2,
 h3,
-h4	{
+h4 {
 	font-family: 'Marcellus', serif;
 	letter-spacing: 2px;
 }
 
 .card h4 {
-	
+
 	font-family: 'Marcellus', serif;
 	letter-spacing: 1px;
-	font-weight:bold;
-	color:black;
+	font-weight: bold;
+	color: black;
 }
 
 h1,
@@ -149,6 +149,23 @@ h2 {
 
 }
 
+/** key frame classes **/
+.down {
+	animation: down 1.5s linear;
+}
+
+.right {
+	animation: right 1.5s linear;
+}
+
+.left {
+	animation: left 1.5s linear;
+}
+.up{
+	animation: up 1.5s linear;
+	
+}
+
 .landing::after {
 	content: '';
 	position: absolute;
@@ -211,8 +228,9 @@ h2 {
 	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 	border: none;
 }
-.card p{
-	padding:10px;
+
+.card p {
+	padding: 10px;
 	line-height: 1.3em;
 }
 
@@ -340,4 +358,56 @@ footer {
 		text-align: center;
 	}
 
+}
+
+/*==== key frames =====*/
+
+
+
+@keyframes up {
+	0% {
+		opacity: 0;
+		transform: translateY(100px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0)
+	}
+}
+
+@keyframes down {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0)
+	}
+}
+
+@keyframes left {
+	0% {
+		opacity: 0;
+		transform: translateX(100px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}
+
+@keyframes right {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0)
+	}
 }
