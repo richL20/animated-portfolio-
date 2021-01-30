@@ -151,18 +151,18 @@ h2 {
 
 /** key frame classes **/
 .down {
-	animation: down 1.5s linear;
+	animation: down 1.75s ease;
 }
 
 .right {
-	animation: right 1.5s linear;
+	animation: right 1.75s ease;
 }
 
 .left {
-	animation: left 1.5s linear;
+	animation: left 1.75s ease;
 }
 .up{
-	animation: up 1.5s linear;
+	animation: up 1.75s ease;
 	
 }
 
