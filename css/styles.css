@@ -151,7 +151,7 @@ h2 {
 
 /** key frame classes **/
 .down {
-	animation: down 1.75s ease-in;
+	animation: down 1.75s ease-out;
 }
 
 .right {
