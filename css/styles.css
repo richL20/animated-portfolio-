@@ -1,5 +1,6 @@
 /*=== Global ===*/
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@500&family=Overlock+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -7,9 +8,10 @@ html {
 }
 
 body {
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: 1.2rem;
+	line-height: 1.0rem;
 	font-family: 'Montserrat', sans-serif;
+	
 
 }
 
@@ -21,27 +23,19 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
 	font-family: 'Marcellus', serif;
 	letter-spacing: 2px;
 }
 
-.card h4 {
-
-	font-family: 'Marcellus', serif;
+h3,
+h4 {
+	font-family: 'Andika New Basic', sans-serif;
 	letter-spacing: 1px;
-	font-weight: bold;
-	color: black;
+	color: #0c0c0c;
 }
 
-h1,
-h2 {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 
-}
 
 .heading {
 	text-align: center;
@@ -62,7 +56,7 @@ h2 {
 	display: none;
 	position: fixed;
 	bottom: 20px;
-	right: 30px;
+	right: 10px;
 	z-index: 99;
 	font-size: 25px;
 	border: none;
@@ -71,7 +65,7 @@ h2 {
 	color: white;
 	cursor: pointer;
 	padding: 10px 12px;
-	;
+	
 	border-radius: 10%;
 }
 
@@ -112,7 +106,7 @@ h2 {
 }
 
 .navbar-nav .nav-link {
-	padding-top: .8rem;
+	
 	color: gainsboro;
 
 }
@@ -127,15 +121,15 @@ h2 {
 
 #home .fas {
 	color: white;
-	padding: 0;
-	font-size: 1.95rem;
+	padding-right:2rem;
+	
 
 }
 
 /*===== landing =====*/
 
 .landing {
-	background-color: darkgray;
+
 	background-image: url(../img/car.jpg);
 	background-size: cover;
 	background-position: center center;
@@ -151,19 +145,20 @@ h2 {
 
 /** key frame classes **/
 .down {
-	animation: down 1.75s ease-out;
+	animation: down 2.0s;
 }
 
 .right {
-	animation: right 1.75s ease-in;
+	animation: right 2.0s;
 }
 
 .left {
-	animation: left 1.75s ease-in;
+	animation: left 2.0s;
 }
-.up{
-	animation: up 1.75s ease-in;
-	
+
+.up {
+	animation: up 2.0s;
+
 }
 
 .landing::after {
@@ -174,7 +169,7 @@ h2 {
 	height: 100%;
 	width: 100%;
 	background: black;
-	opacity: .8;
+	opacity: .7;
 	z-index: 1;
 }
 
@@ -193,9 +188,17 @@ h2 {
 #skills {
 	background: linear-gradient(to right bottom, #0f7764, rgb(10, 2, 59));
 	color: whitesmoke;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
 	min-height: 100vh;
+	width:100%;
 
+}
+#skills .card{
+	position: relative;
+	text-align: center;
+}
+#skills img{
+	position:relative;
 }
 
 
@@ -213,23 +216,25 @@ h2 {
 
 #skills .card {
 	background-color: none;
-	color: black
+	color: #202020;
 }
 
 /*===== projects ====*/
 #projects {
 	background: linear-gradient(to right top, #0f7764, rgb(10, 2, 59));
 	padding-bottom: 50px;
-
+	color: #2a2a2a;
 
 }
 
 .card {
 	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
 	border: none;
+
 }
 
 .card p {
+
 	padding: 10px;
 	line-height: 1.3em;
 }
@@ -264,6 +269,7 @@ h2 {
 	min-height: 100vh;
 	z-index: 1;
 	padding-bottom: 50px;
+	color: #2a2a2a;
 }
 
 .bg {
@@ -273,27 +279,47 @@ h2 {
 	line-height: 1.25em;
 }
 
+.res {
+	background-color: transparent;
+}
+
+.res a {
+
+	color: #171717 !important;
+
+}
+
+.res a:hover {
+	color: darkred !important;
+	text-decoration: none;
+
+	transition: 1.0s;
+
+}
+
 /*==== contact ====*/
 
 #contact {
 	background: linear-gradient(to right top, #0f7764, rgb(10, 2, 59));
 	color: whitesmoke;
-	min-height: 100vh;
-
-
+	min-height: 80vh;
 
 }
 
 #contact p {
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .heading-underline-2 {
-	width: 2rem;
+	width: 2.5rem;
 	height: .10rem;
 	background-color: whitesmoke;
 	margin: 1.0rem auto;
 
+}
+
+.email:hover {
+	color: white;
 }
 
 /*=== footer ===*/
@@ -317,6 +343,10 @@ footer {
 
 
 @media (max-width: 767px) {
+	body {
+	font-size: 1.0rem;
+	line-height: 1.0rem;
+	}
 	.caption {
 		color: whitesmoke;
 		top: 40%;
@@ -327,7 +357,6 @@ footer {
 	.landing {
 		min-height: 150vh;
 	}
-
 
 	.card {
 		width: 90%;
@@ -359,6 +388,7 @@ footer {
 	}
 
 }
+
 
 /*==== key frames =====*/
 
